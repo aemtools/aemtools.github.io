@@ -1,1 +1,9 @@
 theme: jekyll-theme-midnight
+
+locale: "en-US"
+
+title: "AEMTOOLS"
+
+repository: "aemtools/aemtools.github.io"
+
+github: [metadata]
