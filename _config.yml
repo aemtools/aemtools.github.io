@@ -6,4 +6,8 @@ title: "AEMTOOLS"
 
 repository: "aemtools/aemtools.github.io"
 
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
 github: [metadata]
