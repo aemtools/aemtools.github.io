@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1"> {% seo %}
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    {% seo %}
     <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <!--[if lt IE 8]>
     <link rel="stylesheet" href="{{ '/assets/css/ie.css' | relative_url }}">
@@ -19,46 +20,54 @@
 </head>
 
 <body>
-    <div id="header">
-        <nav>
-            <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
-            {% if site.show_downloads %}
-            <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
-            <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
-            <li class="title">DOWNLOADS</li>
-            {% endif %}
+<div id="header">
+    <nav>
+        <li class="fork"><a href="{{ site.github.repository_url }}">View On GitHub</a></li>
+        {% if site.show_downloads %}
+        <li class="downloads"><a href="{{ site.github.zip_url }}">ZIP</a></li>
+        <li class="downloads"><a href="{{ site.github.tar_url }}">TAR</a></li>
+        <li class="title">DOWNLOADS</li>
+        {% endif %}
+    </nav>
+</div>
+<!-- end header -->
+
+<div class="container-fluid row">
+    <section class="col-2">
+        <nav>Menu
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/faq">FAQ</a></li>
+            </ul>
         </nav>
-    </div>
-    <!-- end header -->
+    </section>
+    <section class="col-10">
+        <div id="title">
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            <p>{{ site.description | default: site.github.project_tagline }}</p>
+            <hr>
+            <span class="credits left">
+                    Project maintained by <a href="{{ site.github.owner_url }}">
+                    {{ site.github.owner_name }}</a>
+                </span>
+            <span class="credits right">
+                    Hosted on GitHub Pages &mdash; Theme by
+                    <a href="https://twitter.com/michigangraham">mattgraham</a>
+                </span>
+        </div>
 
-    <div class="container-fluid row">
-        <section class="col-2">
-            <nav>Menu
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/faq">FAQ</a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="col-10">
-            <div id="title">
-                <h1>{{ site.title | default: site.github.repository_name }}</h1>
-                <p>{{ site.description | default: site.github.project_tagline }}</p>
-                <hr>
-                <span class="credits left">Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
-                <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-            </div>
+        {{ content }}
 
-            {{ content }}
+    </section>
 
-        </section>
+</div>
 
-    </div>
-
-    <script src="/assets/vendor/jquery.min.js"></script>
-    <script src="/assets/vendor/tether.min.js"></script>
-    <script src="/assets/vendor/popper.min.js"></script>
-    <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+<script src="/assets/vendor/jquery.min.js"></script>
+<script src="/assets/vendor/tether.min.js"></script>
+<script src="/assets/vendor/popper.min.js"></script>
+<script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+{% if site.google_analytics %}
+<script type="text/javascript">
 
     {% if site.google_analytics %}
     <script type="text/javascript">
@@ -75,8 +84,10 @@
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
-    </script>
-    {% endif %}
+
+
+</script>
+{% endif %}
 </body>
 
 </html>

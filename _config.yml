@@ -2,7 +2,9 @@ theme: jekyll-theme-midnight
 
 locale: "en-US"
 
-title: "AEMTOOLS"
+title: "AEM Tools"
+
+description: "Plugin for better development of AEM projects with IDEA"
 
 repository: "aemtools/aemtools.github.io"
 
