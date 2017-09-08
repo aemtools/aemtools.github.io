@@ -4,7 +4,7 @@ locale: "en-US"
 
 title: "AEM Tools"
 
-description: "Plugin for better development of AEM projects with IDEA"
+description: "Better development of AEM projects with IDEA"
 
 repository: "aemtools/aemtools.github.io"
 
