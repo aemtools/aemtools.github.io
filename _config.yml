@@ -6,8 +6,17 @@ title: "AEMTOOLS"
 
 repository: "aemtools/aemtools.github.io"
 
+markdown: redcarpet
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
 exclude:
   - Gemfile
   - Gemfile.lock
 
 github: [metadata]
+
+safe: false

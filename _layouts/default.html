@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1"> {% seo %}
+    <link rel="stylesheet" href="/assets/main.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="{{ '/assets/js/respond.js' | relative_url }}"></script>
@@ -30,9 +31,16 @@
     </div>
     <!-- end header -->
 
-    <div class="wrapper">
-
-        <section>
+    <div class="container-fluid row">
+        <section class="col-2">
+            <nav>Menu
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="col-10">
             <div id="title">
                 <h1>{{ site.title | default: site.github.repository_name }}</h1>
                 <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -46,6 +54,11 @@
         </section>
 
     </div>
+
+    <script src="/assets/vendor/jquery.min.js"></script>
+    <script src="/assets/vendor/tether.min.js"></script>
+    <script src="/assets/vendor/popper.min.js"></script>
+    <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
 
     {% if site.google_analytics %}
     <script type="text/javascript">
