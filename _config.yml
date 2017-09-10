@@ -15,6 +15,8 @@ sass:
     - _sass
     - node_modules
 
+google_analytics: UA-106197234-1
+
 exclude:
   - Gemfile
   - Gemfile.lock
