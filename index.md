@@ -27,7 +27,7 @@ layout: default
             IDE: make jcr_root directory configurable 
         </a>
         <a href="#115-collapse" data-toggle="collapse" aria-expanded="false">
-            <span class="collapse-btn fa fa-arrow-arrow-right">
+            <span class="collapse-btn">
                 show more 
             </span>
         </a>
