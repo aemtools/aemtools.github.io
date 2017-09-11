@@ -1,12 +1,15 @@
 theme: jekyll-theme-midnight
 
+plugins:
+  - jekyll-github-metadata
+
 locale: "en-US"
 
 title: "AEM Tools"
 
 description: "Better development of AEM projects with IDEA"
 
-repository: "aemtools/aemtools.github.io"
+repository: "aemtools/aemtools"
 
 markdown: redcarpet
 
@@ -23,4 +26,4 @@ exclude:
 
 github: [metadata]
 
-safe: false
+safe: true

@@ -3,3 +3,15 @@
 
 @import "_variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+.collapse-btn {
+    color: #bababa;
+}
+
+[aria-expanded="false"] > .collapse-btn:after {
+    content: '⇨';
+}
+
+[aria-expanded="true"] > .collapse-btn:after {
+    content: '⇩'
+}
