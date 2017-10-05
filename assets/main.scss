@@ -1,8 +1,27 @@
 ---
 ---
 
-@import "_variables";
-@import "../node_modules/bootstrap/scss/bootstrap";
+// @import "_variables";
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap";
+
+body {
+    padding-top: 120px;
+}
+
+#title {
+    overflow: auto;
+}
+
+.credits.left {
+    display: block;
+    float: left;
+}
+
+.credits.right {
+    display: block;
+    float: right;
+}
 
 .collapse-btn {
     color: #bababa;

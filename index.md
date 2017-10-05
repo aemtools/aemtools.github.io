@@ -48,7 +48,10 @@ layout: default
         </a>
         <div id="108-collapse" class="collapse hide" data-parent="changelog-accordion" role="tabpanel" aria-labelledby="108-heading">
             <div class="card-block">
-                <video class="col-10" controls src="/assets/images/cnotes/fix_variable.webm">
+                <video class="col-10 video-js" data-setup='{"loop": true}'
+                 loop="true" 
+                 controls preload="auto" width="640" height="264">
+                 <source src="/assets/images/cnotes/fix_variable.webm" type="video/webm">
                 </video>
             </div>
         </div>
