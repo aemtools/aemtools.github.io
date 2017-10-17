@@ -13,15 +13,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <link href="http://vjs.zencdn.net/6.2.7/video-js.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
 </head>
 
 <body>
 
 <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-primary">
-    <a href="/" class="navbar-brand">AEM Tools</a>
-
-    <button class="navbar-toggler"
+    <button class="navbar-toggler navbar-toggler-right"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -30,6 +27,8 @@
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
+    <a href="/" class="navbar-brand">AEM Tools</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -67,7 +66,7 @@
             </ul>
         </nav>
     </section>
-    <section class="col-12 col-md-10 col-xl-8">
+    <section class="col-12 col-md-10 col-xl-10">
         <div id="title">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
             <p>{{ site.description | default: site.github.project_tagline }}</p>
@@ -118,6 +117,7 @@
         ga('create', '{{ site.google_analytics }}', 'auto');
         ga('send', 'pageview');
     
+
 </script>
 {% endif %}
 </body>
