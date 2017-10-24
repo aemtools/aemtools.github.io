@@ -4,17 +4,26 @@ layout: default
 
 ### The mission?
 
-<p>Development of AEM projects requires dealing with various AEM specific file formats (e.g. HTL), many custom configuration
-    files (such as author's dialog definition, security policies etc.). Much burden added to developer's tools set. The goal
-    of the project is to make developer's routine work smoother by leveraging abilities IDE may provide.</p>
+<p>
+Development of AEM projects requires dealing with various AEM specific file formats (e.g. HTL), many custom configuration
+files (such as author's dialog definition, security policies etc.). Much burden added to developer's tools set. The goal
+of the project is to make developer's routine work smoother by leveraging abilities IDE may provide.
+</p>
 
 ### Features at glance: 
 
-* HTL Support
+* HTL Support:
 
     <img src="/assets/images/screenshots/main.png" class="img-fluid" alt="Htl Support Overview Screenshot">
 
-* OSGi [image]
+* OSGi: 
+
+<video class="col-10 video-js" data-setup='{"loop": true, "fluid": true}'
+loop="true" 
+controls preload="auto" width="855" height="264">
+<source src="/assets/images/cnotes/osgi_features.webm" type="video/webm">
+</video>
+
 * Specific AEM files support 
   * dialog.xml [Image] 
   * _cq_edit_config.xml [Image] 
