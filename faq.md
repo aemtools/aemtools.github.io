@@ -2,7 +2,7 @@
 title: Plugin FAQ
 ---
 
-AEM Tools FAQ
+### AEM Tools FAQ
 
 * Plugin suggests Sling Model for completion in *data-sly-use* but in runtime I have error *org.apache.sling.scripting.sightly.render.AbstractRuntimeObjectModel Cannot access method &lt;my method name&gt;*, what am I doing wrong?
 
