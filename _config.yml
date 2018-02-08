@@ -25,3 +25,6 @@ exclude:
 github: [metadata]
 
 safe: true
+
+common:
+  pluginName: AEM Tools

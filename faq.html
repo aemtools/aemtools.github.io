@@ -1,0 +1,35 @@
+---
+layout: default
+title: Plugin FAQ
+---
+
+<h3>AEM Tools FAQ</h3>
+
+<dl>
+    <dt>
+        Plugin suggests Sling Model for completion in
+        <code>data-sly-use</code> but in runtime I have error <i>org.apache.sling.scripting.sightly.render.AbstractRuntimeObjectModel Cannot access
+        method &lt;my method name&gt;</i>, what am I doing wrong?
+    </dt>
+    <dd>Please make sure that you have correct OSGi directive `Sling-Models-Package` present in sling models containing module. The AEM Tools plugin
+        doesn't take into consideration neither it's presence or correctness.
+    </dd>
+    <dt>
+        I open HTL file but it seems that it is not recognized by plugin, how do I fix that?
+    </dt>
+    <dd>
+        By default <strong>only</strong> html files under
+        <strong>jcr_root</strong> folder are considered as HTL files.
+        You can mark any additional directory as "HTL Root" via context menu
+        <code>Mark directory as -> HTL Root</code>
+    </dd>
+
+    <dt>
+        There are several different plugins with AEM support available for Intellij IDEA,
+        what the difference comparing to {{ site.data.common.pluginName }}?
+        Won't it conflict with them?
+    </dt>
+    <dd>
+        {% include comparison-table.html %}
+    </dd>
+</dl>
