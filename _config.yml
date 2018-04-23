@@ -16,7 +16,7 @@ sass:
     - _sass
     - node_modules
 
-google_analytics: UA-106197234-1
+google_analytics: UA-113762876-1
 
 exclude:
   - Gemfile
@@ -25,3 +25,6 @@ exclude:
 github: [metadata]
 
 safe: true
+
+common:
+  pluginName: AEM Tools
