@@ -13,29 +13,32 @@ layout: default
 <h3>Features at glance</h3>
 
 <dl>
-  <dt>HTL Support:</dt>
+  <dt><h4>HTL Support:</h4></dt>
   <dd>
     <img src="/assets/images/screenshots/main.png" class="img-fluid" alt="Htl Support Overview Screenshot">
   </dd>
-  <dt>OSGi:</dt>
+  <dt><h4>OSGi:</h4></dt>
   <dd>
     <video class="col-10 video-js" data-setup='{"loop": true, "fluid": true}' loop="true" controls preload="auto" width="855"
       height="264">
       <source src="/assets/images/cnotes/osgi_features.webm" type="video/webm">
     </video>
   </dd>
-  <dt>AEM "Small" Files Support:</dt>
+  <dt><h4>AEM "Small" Files Support:</h4></dt>
   <dd>
     <ul>
       <li>dialog.xml</li>
       <li>_cq_editConfig.xml</li>
+      <li>_rep_policy.xml</li>
       <li>js.txt</li>
       <li>css.txt</li>
     </ul>
-  </dd>
+  </dl>
 </dl>
 
 <h3>Changelog </h3>
+{% include changes/0.9.html %}
+
 {% include changes/0.8.1.html %}
 
 {% include credits.html %}
